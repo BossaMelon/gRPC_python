@@ -13,6 +13,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
+from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -20,8 +21,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='proto',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\x0b\x66irst.proto\x12\x05proto\"\x1c\n\x0cHelloRequest\x12\x0c\n\x04name\x18\x01 \x01(\t\"\x1d\n\nHelloReply\x12\x0f\n\x07message\x18\x01 \x01(\t\"\x19\n\nNumRequest\x12\x0b\n\x03str\x18\x01 \x01(\t\"\x17\n\x08HelloNum\x12\x0b\n\x03num\x18\x01 \x01(\x05\x32t\n\x0c\x46irstGreeter\x12\x34\n\x08SayHello\x12\x13.proto.HelloRequest\x1a\x11.proto.HelloReply\"\x00\x12.\n\x06SayNum\x12\x11.proto.NumRequest\x1a\x0f.proto.HelloNum\"\x00\x62\x06proto3')
-)
+  serialized_pb=_b('\n\x0b\x66irst.proto\x12\x05proto\x1a\x1bgoogle/protobuf/empty.proto\"\x1c\n\x0cHelloRequest\x12\x0c\n\x04name\x18\x01 \x01(\t\"\x1d\n\nHelloReply\x12\x0f\n\x07message\x18\x01 \x01(\t\"\x0c\n\nNumRequest\"\x17\n\x08HelloNum\x12\x0b\n\x03num\x18\x01 \x01(\x05\x32t\n\x0c\x46irstGreeter\x12\x34\n\x08SayHello\x12\x13.proto.HelloRequest\x1a\x11.proto.HelloReply\"\x00\x12.\n\x06SayNum\x12\x11.proto.NumRequest\x1a\x0f.proto.HelloNum\"\x00\x62\x06proto3')
+  ,
+  dependencies=[google_dot_protobuf_dot_empty__pb2.DESCRIPTOR,])
 
 
 
@@ -52,8 +54,8 @@ _HELLOREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=22,
-  serialized_end=50,
+  serialized_start=51,
+  serialized_end=79,
 )
 
 
@@ -83,8 +85,8 @@ _HELLOREPLY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=52,
-  serialized_end=81,
+  serialized_start=81,
+  serialized_end=110,
 )
 
 
@@ -95,13 +97,6 @@ _NUMREQUEST = _descriptor.Descriptor(
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
-    _descriptor.FieldDescriptor(
-      name='str', full_name='proto.NumRequest.str', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -114,8 +109,8 @@ _NUMREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=83,
-  serialized_end=108,
+  serialized_start=112,
+  serialized_end=124,
 )
 
 
@@ -145,8 +140,8 @@ _HELLONUM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=110,
-  serialized_end=133,
+  serialized_start=126,
+  serialized_end=149,
 )
 
 DESCRIPTOR.message_types_by_name['HelloRequest'] = _HELLOREQUEST
@@ -191,8 +186,8 @@ _FIRSTGREETER = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=135,
-  serialized_end=251,
+  serialized_start=151,
+  serialized_end=267,
   methods=[
   _descriptor.MethodDescriptor(
     name='SayHello',

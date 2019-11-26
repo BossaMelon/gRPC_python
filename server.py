@@ -3,7 +3,7 @@ import first_pb2_grpc
 import first_pb2
 from concurrent import futures
 import random
-
+import animation
 
 # service名字影响父类名字
 class Greeter(first_pb2_grpc.FirstGreeterServicer):
@@ -22,7 +22,7 @@ class Greeter(first_pb2_grpc.FirstGreeterServicer):
         # 返回结果
 
     def SayNum(self, request, context):
-        return first_pb2.HelloNum(num=len(request.str)+random.randint(0,10))
+        return first_pb2.HelloNum(num=random.randint(0,10))
 
 
 def serve():
@@ -33,7 +33,7 @@ def serve():
     # 指定监听ip+port
     server.add_insecure_port('localhost:50051')
     server.start()
-    server.wait_for_termination()
+    animation.waiting_animation(0.5)
 
 
 if __name__ == '__main__':
