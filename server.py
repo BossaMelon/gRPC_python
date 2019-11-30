@@ -1,6 +1,7 @@
 import grpc
 import first_pb2_grpc
 import first_pb2
+import dependency
 from concurrent import futures
 
 
