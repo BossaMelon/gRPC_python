@@ -24,7 +24,9 @@ message HelloReply {
   string message = 1;
 }
 
-message NumRequest {}
+message NumRequest {
+  string length = 1;
+}
 
 
 message HelloNum {
