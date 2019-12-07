@@ -3,6 +3,7 @@ import grpc
 import first_pb2_grpc
 import first_pb2
 from concurrent import futures
+import animation
 
 
 # service名字影响父类名字
@@ -21,7 +22,7 @@ class Greeter(first_pb2_grpc.FirstGreeterServicer):
 
     def SayNum(self, request, context):
         print("嘿嘿")
-        return first_pb2.HelloNum(num=int(request.length)-5)
+        return first_pb2.HelloNum(num=int(request.length) - 5)
 
 
 def serve():
@@ -33,8 +34,8 @@ def serve():
     server.add_insecure_port('localhost:50051')
     server.start()
     print("Waiting for client...")
-    server.wait_for_termination()
-    # animation.waiting_animation(0.5)
+    # server.wait_for_termination()
+    animation.waiting_animation(0.5)
 
 
 if __name__ == '__main__':

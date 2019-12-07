@@ -1,5 +1,5 @@
-import dependency
 from __future__ import print_function
+import dependency
 import grpc
 import first_pb2
 import first_pb2_grpc
