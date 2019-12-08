@@ -4,6 +4,7 @@ import first_pb2_grpc
 import first_pb2
 from concurrent import futures
 import animation
+import random
 
 
 # service名字影响父类名字

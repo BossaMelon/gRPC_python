@@ -1,6 +1,8 @@
 import time
 
 
+# def safe
+
 def waiting_animation(n):
     animation = "|/-\\"
     idx = 0
