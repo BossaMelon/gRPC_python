@@ -1,11 +1,11 @@
 from __future__ import print_function
-import dependency
+
+import time
+
 import grpc
+
 import first_pb2
 import first_pb2_grpc
-import time
-from util import ipcheck
-
 
 
 def run():
